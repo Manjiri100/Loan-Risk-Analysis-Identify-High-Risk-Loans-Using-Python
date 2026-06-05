@@ -1,54 +1,88 @@
-# 💰 Loan Risk Analysis Project
+📊 Loan Risk Analysis Project
+🧾 Overview
 
-This project performs **Loan Risk Analysis** using a sample loan dataset. The goal is to identify **high-risk loans** based on financial and demographic data, and provide insights for smarter decision-making. 📊
+This project performs Exploratory Data Analysis (EDA) on a loan dataset to understand the factors that influence loan approval. The goal is to analyze patterns in applicant data and identify key drivers of loan risk and approval decisions.
 
----
+🎯 Objective
+Analyze loan application data
+Identify patterns affecting loan approval
+Handle missing values and duplicates
+Visualize relationships between features and loan status
+Gain insights for better decision-making in loan risk assessment
+📁 Dataset
 
-## 🚀 Project Overview
+The dataset includes applicant information such as:
 
-- **🎯 Objective:** Analyze loan applications to determine potential risk and provide actionable insights  
-- **📂 Type:** Data Analysis / Rule-based Risk Scoring  
-- **📄 Dataset:** `Loan_Risk_Data.csv` (columns include Loan_ID, Gender, Married, Dependents, Education, Self_Employed, ApplicantIncome, CoapplicantIncome, LoanAmount, Loan_Amount_Term, Credit_History, Property_Area, Loan_Status)  
-- **🛠 Tools & Libraries:** Python, Pandas, NumPy, Matplotlib, Seaborn, Jupyter Notebook
+Applicant Income
+Loan Amount
+Credit History
+Property Area
+Loan Status (Approved/Not Approved)
 
----
+Note: Dataset path used locally in the project.
 
-## 📝 Project Steps
+🛠️ Tools & Libraries Used
+Python 🐍
+Pandas
+NumPy
+Matplotlib
+Seaborn
+📊 Project Workflow
+1. Import Libraries
 
-1. **🔹 Data Loading & Inspection**  
-   - Loaded the CSV file and inspected dataset structure.  
-2. **🔹 Data Cleaning**  
-   - Checked for missing values and duplicates (none in this dataset).  
-3. **🔹 Exploratory Data Analysis (EDA)**  
-   - Visualized distributions of Loan Status, Credit History, Applicant Income vs Loan Amount, Property Area, etc.  
-4. **🔹 Feature Engineering & Risk Scoring**  
-   - Created `TotalIncome` feature.  
-   - Applied **rule-based scoring**: loans with bad credit history or high LoanAmount relative to income are flagged as **High Risk** ⚠️  
-5. **🔹 Risk Insights Visualization**  
-   - Plotted Risk distribution, LoanAmount vs Risk, TotalIncome vs Risk 📈  
-6. **🔹 Summary & Recommendations**  
-   - Most loans with bad credit history or high LoanAmount relative to income are flagged as High Risk ⚠️  
-   - Banks can use this scoring for **quick pre-screening** 🏦  
-   - Visual insights help identify **high-risk demographic or property areas** 🌍
+Standard data science libraries were imported for analysis and visualization.
 
----
+2. Load Dataset
 
-## 🛠 How to Use
+The dataset was loaded using Pandas for further analysis.
 
-1. Clone or download this repository.  
-2. Open `Loan_Risk_Analysis.ipynb` in Jupyter Notebook.  
-3. Make sure `Loan_Risk_Data.csv` is in the same folder.  
-4. Run all cells sequentially to see data analysis, visualizations, and risk scoring ✅
+3. Data Exploration
+Checked data structure using head(), info(), and describe()
+Identified missing values
+Checked duplicate records
+4. Data Cleaning
+Analyzed missing values
+Checked dataset consistency
+5. Data Visualization
 
----
+Key insights were visualized using Seaborn and Matplotlib:
 
-## 📊 Project Insights
+Loan approval distribution
+Loan status vs credit history
+Loan status vs property area
+Income distribution
+Correlation heatmap
+📌 Key Insights
+Credit history plays a major role in loan approval
+Property area shows variation in approval patterns
+Income distribution is skewed with some high earners
+Missing values exist in multiple columns and need preprocessing
+📈 Visualizations
 
-- High-risk loans are mostly associated with:  
-  - ❌ Bad credit history (Credit_History = 0)  
-  - 💸 High LoanAmount relative to total income  
-- 🌆 Urban vs Rural property areas may show trends in risk distribution  
-- This analysis helps banks **prioritize applications that need further review**  
+The project includes:
+
+Count plots for categorical analysis
+Histograms for income distribution
+Heatmaps for missing values and correlation
+Comparative plots for loan status vs features
+🚀 How to Run This Project
+Clone this repository
+git clone https://github.com/your-username/loan-risk-analysis.git
+Install dependencies
+pip install pandas numpy matplotlib seaborn
+Run the notebook or Python script
+jupyter notebook
+📂 Project Structure
+Loan_Risk_Analysis_Project/
+│
+├── Loan_Risk_Data.csv
+├── loan_analysis.ipynb
+├── README.md
+📌 Future Improvements
+Build a machine learning model for loan prediction
+Perform feature engineering
+Handle missing values using imputation techniques
+Deploy model as a web app
 
 ---
 
@@ -57,4 +91,4 @@ This project performs **Loan Risk Analysis** using a sample loan dataset. The go
 <img width="1536" height="1024" alt="Loan risk analysis data visualization" src="https://github.com/user-attachments/assets/7eaf10ae-e2fb-4431-a8dd-66e16659e7d4" />
 
 
-**👩‍💻 Author:** Manjiri Hundikar
+
